@@ -3,5 +3,5 @@
 ## My information
 - Theerachut Saekoi 41-5
 
-## ความคาดหวังของวิชานี้ที่อยากได้
--  ต้องการศึกษาเรียนรู้ในการใช้งาน Git hub,การใช้คำสั่งในLinux PowerShell ให้มากๆ และเนื้อหาหลักในCyber Security
+## My expectations for this course.
+-  I want to study and learn a lot about using GitHub, Linux PowerShell commands, and core content in Cyber ​​Security.
