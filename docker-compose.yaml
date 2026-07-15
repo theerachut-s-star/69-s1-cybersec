@@ -3,7 +3,7 @@ services:
     image: postgres:16-alphine
     container_name: 69-s1-db
     ports:
-      54327:5432
+      - "54327:5432"
     enviroment:
       POSTGRES_PASSWORD=isyl]y[
       POSTGRES_USER=Theerachut
