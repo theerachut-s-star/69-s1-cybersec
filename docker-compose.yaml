@@ -21,5 +21,4 @@ services:
       depends_on:
         - db
 volumes:
-  data-postgres:
-  data-admin:
+   data-admin:
