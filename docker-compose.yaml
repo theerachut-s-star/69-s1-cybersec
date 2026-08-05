@@ -9,7 +9,7 @@ services:
       - POSTGRES_USER=Theerachut
       - POSTGRES_DB=Theerachut
     volumes:
-      - ./data:/var/lib/postgresql/data
+      - ./data-postgres:/var/lib/postgresql/data
   admin:
       image: dpage/pgadmin4
       container_name: 69-s1-admin
@@ -20,4 +20,6 @@ services:
         - "8081:80" 
       depends_on:
         - db
-      
+volumes:
+  data-postgres:
+  data-admin:
