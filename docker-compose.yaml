@@ -21,4 +21,4 @@ services:
       depends_on:
         - db
 volumes:
-     ./data:/var/lib/pgadmin
+       -  ./data:/var/lib/pgadmin
