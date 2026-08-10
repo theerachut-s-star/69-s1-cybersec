@@ -19,8 +19,8 @@ services:
     ports:
       - "8081:80"
     environment:
-      - PGADMIN_DEFAULT_EMAIL=${DB_NAME}
-      - PGADMIN_DEFAULT_PASSWORD=${DB_NAME}
+      - PGADMIN_DEFAULT_EMAIL=${PG_EMAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PG_PASS}
     volumes:
       - ./pgadmin:/var/lib/pgadmin
     depends_on:
