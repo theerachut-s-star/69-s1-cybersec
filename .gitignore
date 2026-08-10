@@ -1,2 +1,6 @@
 data/
 docker
+.env
+.env.txt
+data-postgres/
+pgadmin/
