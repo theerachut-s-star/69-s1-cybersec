@@ -1,0 +1,40 @@
+##api
+
+
+##Signup
+GET http://localhost:9092/admin/auth/register-admin
+content-type: application/json
+
+{
+  "firstName": "Theerachut",
+  "lastName": "Theerachut",
+  "email": "theerachut-s@rmutp.ac.th",
+  "password": "Pass_admin456",
+  "confirmPassword": "Pass_admin456"
+}
+###                                     
+
+##login
+POST http://localhost:9092/admin/login
+content-type: application/json
+
+{
+  "email": "theerachut-s@rmutp.ac.th",
+  "password": "Pass_admin456",
+  "rememberMe": "false"
+}
+###
+
+##profile
+GET http://localhost:9092/admin/me
+Authorization: Bearer {{login.response.body.$.data.token}}
+###
+
+##forgot
+GET http://localhost:9092/admin/auth/forgot-password
+content-type: application/json
+
+{
+  "email": "theerachut-s@rmutp.ac.th"
+}
+###
