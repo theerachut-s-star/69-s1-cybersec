@@ -38,12 +38,11 @@ content-type: application/json
 
 ### User Signup
 # @name userRegister
-POST http://localhost:9092/user/auth/register
+POST http://localhost:9092/api/auth/local/register
 content-type: application/json
 
 {
-  "firstName": "",
-  "lastName": "",
+  "username": "",
   "email": "",
   "password": "",
   "confirmPassword": ""
@@ -51,26 +50,24 @@ content-type: application/json
 
 ### User Login
 # @name userLogin
-POST http://localhost:9092/user/login
+POST http://localhost:9092/api/auth/local
 content-type: application/json
 
 {
-  "email": "",
-  "password": "",
-  "rememberMe": ""
+  "identifier": "",
+  "password": ""
 }
 
 ### User Profile
 # @name userProfile
-GET http://localhost:9092/user/me
-Authorization: Bearer {{userLogin.response.body.$.data.token}}
+GET http://localhost:9092/api/users/me
+Authorization: Bearer {{userLogin.response.body.jwt}}
 
 ### User Forgot Password
 # @name userForgotPassword
-POST http://localhost:9092/user/forgot-password
+POST http://localhost:9092/api/auth/forgot-password
 content-type: application/json
 
 {
   "email": ""
 }
-
