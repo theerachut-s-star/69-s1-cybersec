@@ -2,7 +2,7 @@
 
 
 ###Admin Signup
-GET http://localhost:9092/admin/auth/register-admin
+POST http://localhost:9092/admin/auth/register-admin
 content-type: application/json
 
 {
