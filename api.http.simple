@@ -2,7 +2,18 @@
 
 ## 1.Admin
 
-### 1.1 Admin Signup
+### 1.1 Admin Login
+# @name adminLogin
+POST http://localhost:9092/admin/login
+content-type: application/json
+
+{
+  "email": "",
+  "password": "",
+  "rememberMe": ""
+}
+
+### 1.2 Admin Signup
 POST http://localhost:9092/admin/auth/register-admin
 content-type: application/json
 
@@ -12,17 +23,6 @@ content-type: application/json
   "email": "",
   "password": "",
   "confirmPassword": ""
-}
-
-### 1.2 Admin Login
-# @name adminLogin
-POST http://localhost:9092/admin/login
-content-type: application/json
-
-{
-  "email": "",
-  "password": "",
-  "rememberMe": ""
 }
 
 ### 1.3 Admin Forgot Password
